@@ -1,0 +1,11 @@
+{
+  "Response": {
+    "RequestId": "req-1",
+    "User": {
+      "Id": 42,
+      "GlobalKey": "coder",
+      "Name": "CODING User",
+      "Avatar": "https://coding-net-production-static-ci.codehub.cn/test.jpg"
+    }
+  }
+}

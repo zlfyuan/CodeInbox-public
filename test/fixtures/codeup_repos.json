@@ -1,0 +1,13 @@
+[
+  {
+    "description": "Inbox for reviews",
+    "id": 2813489,
+    "lastActivityAt": "2026-09-14T08:00:00Z",
+    "name": "box",
+    "path": "box",
+    "pathWithNamespace": "acme/box",
+    "starCount": 3,
+    "visibility": "private",
+    "webUrl": "https://codeup.aliyun.com/acme/box"
+  }
+]

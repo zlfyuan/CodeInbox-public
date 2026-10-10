@@ -1,0 +1,349 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "CodeInbox",
+
+  "tabInbox": "Inbox",
+  "tabAlerts": "Alerts",
+  "tabRepos": "Repos",
+  "tabMe": "Me",
+
+  "welcomeHeadline": "One inbox for GitHub, Gitee, GitLab, Codeup, Gongfeng, and CODING review requests.",
+
+  "welcomeSubheadline": "Aggregate PR/MR review requests from every forge you use.",
+
+  "inboxTitle": "Inbox",
+  "inboxFilterNeedsReview": "Needs my review",
+  "inboxSearchHint": "Filter by title or repo",
+  "inboxNoMatchesTitle": "No matches",
+  "inboxNoMatchesSubtitle": "Try another title or repo name.",
+  "inboxLoadingTitle": "Loading…",
+  "inboxAllCaughtUpTitle": "You're all caught up",
+  "inboxAllCaughtUpSubtitleSingle": "Add a second platform so reviews land in one place.",
+  "inboxAllCaughtUpSubtitleGitee": "Gitee only scans your 20 most recently updated repos.",
+  "inboxAddAnotherPlatform": "Add another platform",
+  "inboxLoadMore": "Load more",
+
+  "alertsTitle": "Alerts",
+  "alertsSearchHint": "Filter by title, repo, or reason",
+  "alertsNoMatchesTitle": "No matches",
+  "alertsNoMatchesSubtitle": "Try another platform or keyword.",
+  "alertsNoUnreadTitle": "No unread notifications",
+  "alertsNoUnreadSubtitle": "Pull to refresh. Some platforms only expose a weak inbox.",
+
+  "reposTitle": "Repos",
+  "reposSearchHint": "Filter by name, language, or topic",
+  "reposNoMatchesTitle": "No matches",
+  "reposNoMatchesSubtitle": "Try another name, language, or topic.",
+  "reposFilteredEmptyTitle": "No repos match these filters",
+  "reposFilteredEmptySubtitle": "Clear some filters to see more.",
+  "reposEmptyTitle": "No repositories yet",
+  "reposEmptySubtitle": "Add an account, then pull to refresh.",
+
+  "sortByTooltip": "Sort by",
+  "sortByUpdated": "Recently updated",
+  "sortByName": "Name A→Z",
+  "sortByStars": "Most stars",
+  "sortByOpenPrs": "Most open PRs",
+
+  "filterHideArchived": "Hide archived",
+  "filterPublicOnly": "Public only",
+  "filterAll": "All",
+
+  "repoSheetOpenInBrowser": "Open in browser",
+  "repoSheetCopyUrl": "Copy URL",
+  "repoSheetUrlCopied": "URL copied",
+  "repoMetaUpdated": "Updated {date}",
+  "@repoMetaUpdated": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  },
+  "repoMetaArchived": "archived",
+  "repoMetaFork": "fork",
+  "repoOpenPrPill": "{count} open",
+  "@repoOpenPrPill": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+
+  "repoDetailTabOverview": "Overview",
+  "repoDetailTabPullRequests": "Pull requests",
+  "repoDetailTabPullRequestsCount": "Pull requests ({count})",
+  "@repoDetailTabPullRequestsCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "repoDetailStatStars": "Stars",
+  "repoDetailStatForks": "Forks",
+  "repoDetailStatIssues": "Issues",
+  "repoDetailMetaCreated": "Created {date}",
+  "@repoDetailMetaCreated": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  },
+  "repoDetailMetaUpdated": "Updated {date}",
+  "repoDetailReadmeHeader": "README",
+  "repoDetailReadmeEmpty": "No README in this repository.",
+  "repoDetailShowMore": "Show more",
+  "repoDetailShowLess": "Show less",
+  "repoDetailLoadFailed": "Failed to load",
+  "repoDetailLoadFailedReadme": "Failed to load README",
+  "repoDetailNoOpenPrs": "No open pull requests",
+  "repoDetailNoOpenPrsSubtitle": "Nothing open on {repo}. Review requests on other repos are in Inbox.",
+  "@repoDetailNoOpenPrsSubtitle": {
+    "placeholders": {
+      "repo": { "type": "String" }
+    }
+  },
+  "repoDetailDraft": "draft",
+  "repoDetailSheetOpenInBrowser": "Open in browser",
+  "repoDetailSheetCopyWebUrl": "Copy web URL",
+  "repoDetailSheetCopyCloneUrlHttps": "Copy clone URL (HTTPS)",
+  "repoDetailSheetCopyCloneUrlSsh": "Copy clone URL (SSH)",
+  "repoDetailWebUrlCopied": "Web URL copied",
+  "repoDetailCloneUrlCopied": "Clone URL copied",
+  "repoDetailStatSubscribers": "Subscribers",
+  "repoDetailTabIssues": "Issues",
+  "repoDetailTabIssuesCount": "Issues ({count})",
+  "repoDetailTabCode": "Code",
+  "repoDetailNoBranches": "No branches",
+  "repoDetailNoCommits": "No commits",
+  "repoDetailBranchProtected": "protected",
+  "repoDetailCodeUnsupported": "This platform does not support code browsing",
+  "repoDetailCodeBranchesHeader": "Branches ({count})",
+  "repoDetailCodeCommitsHeader": "Commits ({count})",
+  "repoDetailTabContributors": "Contributors",
+  "repoDetailNoContributors": "No contributors",
+  "repoDetailNoContributorsSubtitle": "{repo} has no contributors yet.",
+  "repoDetailContributions": "{count} contributions",
+  "repoDetailNoOpenIssues": "No open issues",
+  "repoDetailNoOpenIssuesSubtitle": "{repo} has no open issues.",
+  "repoDetailStarTooltip": "Star",
+  "repoDetailUnstarTooltip": "Unstar",
+  "repoDetailStarFailed": "Action failed, please retry",
+
+  "issueStateOpen": "Open",
+  "issueStateClosed": "Closed",
+  "issueDetailMetaLine": "{author} opened on {date}",
+  "@issueDetailMetaLine": {
+    "placeholders": {
+      "author": { "type": "String" },
+      "date": { "type": "String" }
+    }
+  },
+  "issueDetailAssignees": "Assignees: {logins}",
+  "@issueDetailAssignees": {
+    "placeholders": {
+      "logins": { "type": "String" }
+    }
+  },
+  "issueDetailCommentsHeader": "Comments ({count})",
+  "@issueDetailCommentsHeader": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "issueDetailNoComments": "No comments yet.",
+
+  "prDetailBranchLine": "{author}  {source} → {target}",
+  "@prDetailBranchLine": {
+    "placeholders": {
+      "author": { "type": "String" },
+      "source": { "type": "String" },
+      "target": { "type": "String" }
+    }
+  },
+  "prDetailChipCi": "CI {status}",
+  "@prDetailChipCi": {
+    "placeholders": {
+      "status": { "type": "String" }
+    }
+  },
+  "prDetailChipNotMergeable": "not mergeable",
+  "prDetailFilesHeader": "Files ({count})",
+  "@prDetailFilesHeader": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "prDetailNoFiles": "No file list. Open in browser for the full diff.",
+  "prDetailFileStat": "+{additions}  −{deletions}  {status}",
+  "@prDetailFileStat": {
+    "placeholders": {
+      "additions": { "type": "int" },
+      "deletions": { "type": "int" },
+      "status": { "type": "String" }
+    }
+  },
+  "prDetailCommentsHeader": "Comments ({count})",
+  "@prDetailCommentsHeader": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "prDetailNoComments": "No comments yet.",
+  "prDetailCommentPath": "{path}:{line}",
+  "@prDetailCommentPath": {
+    "placeholders": {
+      "path": { "type": "String" },
+      "line": { "type": "int" }
+    }
+  },
+  "prDetailReviewApproved": "Approved",
+  "prDetailReviewRequestedChanges": "Requested changes",
+  "prDetailReviewCommentPosted": "Comment posted",
+  "prDetailReviewMerged": "Merged",
+  "prDetailReviewFailed": "Review failed",
+  "prDetailReviewButton": "Review",
+  "prDetailMergeButton": "Merge",
+  "prDetailReviewSheetTitle": "Review",
+  "prDetailReviewSheetCommentHint": "Optional comment",
+  "prDetailReviewSheetComment": "Comment",
+  "prDetailReviewSheetApprove": "Approve",
+  "prDetailReviewSheetRequestChanges": "Request changes",
+  "prDetailMergeDialogTitle": "Merge this pull request?",
+  "prDetailMergeDialogContent": "{repo} #{number} will be merged on the remote.",
+  "@prDetailMergeDialogContent": {
+    "placeholders": {
+      "repo": { "type": "String" },
+      "number": { "type": "int" }
+    }
+  },
+  "prDetailCancel": "Cancel",
+
+  "diffOpenInBrowser": "Open in browser",
+  "diffBinary": "This file is binary or the forge did not return a text diff.",
+  "diffTruncated": "Showing a truncated diff.",
+  "diffTapHint": "Tap a green or unchanged line to comment on it.",
+  "diffLineComment": "Line comment",
+  "diffCommentOnLine": "Comment on line {line}",
+  "@diffCommentOnLine": {
+    "placeholders": {
+      "line": { "type": "int" }
+    }
+  },
+  "diffLineNumberLabel": "Line number",
+  "diffCommentHint": "Comment on this file",
+  "diffPostComment": "Post comment",
+  "diffCommentPosted": "Comment posted",
+  "diffCommentFailed": "Comment failed",
+  "diffOmittedLines": "… remaining lines omitted",
+
+  "accountsTitle": "Accounts",
+  "accountsAddGithub": "Add GitHub",
+  "accountsAddGitee": "Add Gitee",
+  "accountsAddGitlab": "Add GitLab",
+  "accountsAddCodeup": "Add Codeup",
+  "accountsAddGongfeng": "Add Gongfeng",
+  "accountsAddCoding": "Add CODING",
+  "accountsRevokeGithub": "Revoke a GitHub token on the website",
+  "accountsRevokeGitee": "Revoke a Gitee token on the website",
+  "accountsRevokeGitlab": "Revoke a GitLab token on the website",
+  "accountsRevokeCodeup": "Revoke a Codeup token on the website",
+  "accountsRevokeGongfeng": "Revoke a Gongfeng token on the website",
+  "accountsRevokeCoding": "Revoke a CODING token on the website",
+  "accountsRemoveDialogTitle": "Remove account?",
+  "accountsRemoveDialogContent": "Deletes the local token for {name}. Revoke it on the platform website too.",
+  "@accountsRemoveDialogContent": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "accountsRemoveCancel": "Cancel",
+  "accountsRemoveConfirm": "Remove",
+
+  "accountDetailTitle": "Account details",
+  "accountDetailDisplayName": "Display name",
+  "accountDetailLogin": "Username",
+  "accountDetailPlatform": "Platform",
+  "accountDetailBaseUrl": "Server URL",
+  "accountDetailOrgId": "Organization ID",
+  "accountDetailAuthType": "Auth type",
+  "accountDetailAccountId": "Account ID",
+  "accountDetailCreatedAt": "Added at",
+
+  "addAccountTitle": "Add {platform}",
+  "@addAccountTitle": {
+    "placeholders": {
+      "platform": { "type": "String" }
+    }
+  },
+  "addAccountBaseUrl": "Base URL",
+  "addAccountApiDomain": "API domain",
+  "addAccountOrgId": "Organization ID",
+  "addAccountOrgIdHint": "Required for 中心版",
+  "addAccountOpenTokenPage": "Open {platform} token page",
+  "@addAccountOpenTokenPage": {
+    "placeholders": {
+      "platform": { "type": "String" }
+    }
+  },
+  "addAccountPat": "Personal access token",
+  "addAccountDisplayName": "Display name (optional)",
+  "addAccountVerifySave": "Verify & save",
+  "addAccountErrorNoToken": "Paste a token first.",
+  "addAccountErrorNoTeam": "Set your team URL ({url}).",
+  "@addAccountErrorNoTeam": {
+    "placeholders": {
+      "url": { "type": "String" }
+    }
+  },
+  "addAccountErrorVerifyFailed": "Could not verify token",
+  "addAccountHelpGithub": "Create a classic Personal Access Token with repo, notifications, and read:user. Fine-grained tokens cannot read notifications reliably.",
+  "addAccountHelpGitee": "Create a private token with user_info, projects, pull requests, and notifications.",
+  "addAccountHelpGitlab": "Create a personal access token with the api scope. For self-hosted GitLab, set the Base URL first (https://gitlab.example.com).",
+  "addAccountHelpCodeup": "Create a Yunxiao personal access token with 代码管理 · 合并请求 and 代码仓库. 中心版 needs Organization ID; Region 版 uses the instance API domain and can leave Organization ID empty.",
+  "addAccountHelpGongfeng": "Create a private token at Profile → Account. For a self-hosted 工蜂 instance, set the Base URL first (https://git.example.com).",
+  "addAccountHelpCoding": "Set your team URL ({url}). Create a personal access token with vcs:repository and vcs:merge (rw to comment/merge).",
+  "@addAccountHelpCoding": {
+    "placeholders": {
+      "url": { "type": "String" }
+    }
+  },
+
+  "mineTitle": "Me",
+  "mineAccounts": "Accounts",
+  "mineAccountsSubtitle": "{count} connected",
+  "@mineAccountsSubtitle": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "mineAppearance": "Appearance",
+  "mineAppearanceSubtitle": "Follows system",
+  "mineAbout": "About",
+  "mineAboutSubtitle": "CodeInbox {version}",
+  "@mineAboutSubtitle": {
+    "placeholders": {
+      "version": { "type": "String" }
+    }
+  },
+  "mineTokensExplanation": "Tokens stay on this device in the system secret store. There is no CodeInbox backend in this version.",
+  "mineNoAccountsTitle": "No accounts",
+  "mineNoAccountsSubtitle": "Add GitHub or Gitee from Accounts.",
+
+  "imageAlt": "[image]",
+
+  "retry": "Retry",
+  "clear": "Clear",
+  "openInBrowser": "Open in browser",
+
+  "platformGithub": "GitHub",
+  "platformGitee": "Gitee",
+  "platformGitlab": "GitLab",
+  "platformCodeup": "Codeup",
+  "platformGongfeng": "Gongfeng",
+  "platformCoding": "CODING",
+
+  "crStateOpen": "Open",
+  "crStateMerged": "Merged",
+  "crStateClosed": "Closed",
+
+  "repoVisibilityPublic": "Public",
+  "repoVisibilityInternal": "Internal",
+  "repoVisibilityPrivate": "Private"
+}

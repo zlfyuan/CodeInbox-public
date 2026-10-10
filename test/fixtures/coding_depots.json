@@ -1,0 +1,18 @@
+{
+  "Response": {
+    "RequestId": "req-3",
+    "DepotList": [
+      {
+        "Id": 200,
+        "Name": "inbox",
+        "DepotHttpsUrl": "https://e.coding.net/acme/box/inbox.git",
+        "Description": "Inbox for reviews",
+        "DefaultBranch": "master",
+        "StarCount": 3,
+        "ForkCount": 1,
+        "CreatedAt": "2026-09-01T00:00:00Z",
+        "Language": "Dart"
+      }
+    ]
+  }
+}

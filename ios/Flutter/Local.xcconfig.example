@@ -1,0 +1,2 @@
+// 复制为本目录的 Local.xcconfig（已 gitignore）。真机签名时填自己的 Team ID。
+DEVELOPMENT_TEAM=

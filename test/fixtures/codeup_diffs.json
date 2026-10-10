@@ -1,0 +1,11 @@
+[
+  {
+    "newPath": "lib/domain/inbox.dart",
+    "oldPath": "lib/domain/inbox.dart",
+    "newFile": false,
+    "deletedFile": false,
+    "addLines": 4,
+    "delLines": 1,
+    "diff": "@@ -1,3 +1,6 @@\n class Inbox {}\n+void refresh() {}\n"
+  }
+]

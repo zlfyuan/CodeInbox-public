@@ -1,0 +1,23 @@
+# fastlane / deliver 本地产物,不要提交。
+# .env 含 Apple ID / Team ID,必须本地持有。
+.env
+
+# 审核联系邮箱。仓库里只留 example，真实地址不要提交。
+metadata/review_information/email_address.txt
+
+# deliver 生成的 diff / html 报告
+report.xml
+*.html
+*.zip
+
+# 本地构建产物
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# 截图源文件(发布时由 deliver 上传,本机不用入库)
+screenshots/
+
+# fastlane 自动生成的 README.md(运行后会重新生成)
+# README.md

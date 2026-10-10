@@ -1,0 +1,23 @@
+{
+  "total_count": 1,
+  "incomplete_results": false,
+  "items": [
+    {
+      "id": 424242,
+      "number": 12,
+      "title": "Fix inbox merge",
+      "state": "open",
+      "draft": false,
+      "html_url": "https://github.com/acme/box/issues/12",
+      "user": { "login": "alice" },
+      "body": "please review",
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-14T08:00:00Z",
+      "repository_url": "https://api.github.com/repos/acme/box",
+      "pull_request": {
+        "html_url": "https://github.com/acme/box/pull/12",
+        "url": "https://api.github.com/repos/acme/box/pulls/12"
+      }
+    }
+  ]
+}

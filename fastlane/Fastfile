@@ -1,0 +1,116 @@
+# fastlane 配置 — CodeInbox
+# 仅保留本项目需要的 lane:metadata(推元数据)、release(打包+上传二进制)、build(仅编译)。
+# HaiMeiJi 时代的 pgyer / sentry / notifyworker / 微信 webhook 全部移除。
+
+default_platform(:ios)
+
+platform :ios do
+  # ====== 工程配置(读 .env)======
+  xcodeproj     = ENV.fetch('XCODEPROJ', 'Runner.xcodeproj')
+  workspace     = ENV.fetch('WORKSPACE', nil)   # Flutter 工程用 project,不传 workspace
+  scheme_name   = ENV.fetch('SCHEME', 'Runner')
+  bundle_id     = ENV.fetch('APP_IDENTIFIER', 'com.zluof.codeinbox')
+  output_ipa    = ENV.fetch('OUTPUT_IPA', 'CodeInbox.ipa')
+
+  # ====== 全局辅助 ======
+  desc "仅推送元数据/截图,不重新打包、不上传二进制(审核信息更新用)"
+  lane :metadata do |options|
+    upload_to_app_store(
+      force: true,
+      skip_binary_upload: true,
+      skip_metadata: false,
+      skip_screenshots: false,
+      metadata_path: File.expand_path("./metadata", __dir__),
+      screenshots_path: File.expand_path("./screenshots", __dir__),
+      # Apple ID 直登,ASC 后台登录后由 deliver 拉取登录 cookie。
+      # 2FA 会在终端弹窗,按提示输入 6 位验证码即可。
+      username: ENV['APPLE_ID'],
+    )
+    UI.success("元数据已推送至 App Store Connect(#{bundle_id})")
+  end
+
+  desc "Release:打包 + 上传元数据 + 上传二进制(首次发布 / 升级用)"
+  lane :release do |options|
+    # Flutter 项目 build 号写到 pbxproj 的 CURRENT_PROJECT_VERSION
+    if File.exist?(xcodeproj)
+      increment_build_number(
+        xcodeproj: xcodeproj,
+        build_number: options[:build_number] || Time.new.strftime("%Y%m%d%H%M%S"),
+      )
+    end
+
+    # 打包 ipa。Flutter 工程默认 xcodebuild -project,不传 workspace。
+    build_app(
+      project: File.exist?(workspace.to_s) ? nil : xcodeproj,
+      workspace: workspace,
+      configuration: "Release",
+      scheme: scheme_name,
+      clean: true,
+      export_method: "app-store",
+      output_directory: ENV.fetch('OUTPUT_DIR', './build'),
+      output_name: output_ipa,
+      xcargs: "-allowProvisioningUpdates",
+    )
+
+    upload_to_app_store(
+      force: true,
+      skip_metadata: false,
+      skip_screenshots: false,
+      metadata_path: File.expand_path("./metadata", __dir__),
+      screenshots_path: File.expand_path("./screenshots", __dir__),
+      username: ENV['APPLE_ID'],
+    )
+    UI.success("构建已上传至 App Store Connect(#{bundle_id})")
+  end
+
+  desc "仅编译,不打包 ipa(本地 smoke 用)"
+  lane :build do
+    build_app(
+      project: workspace ? nil : xcodeproj,
+      workspace: workspace,
+      configuration: "Debug",
+      scheme: scheme_name,
+      export_method: "development",
+      skip_package_pkg: true,
+    )
+  end
+
+  desc "删指定 locale 的 App Store Version Localization(走 Spaceship API,不重新打包)"
+  lane :delete_locale do |options|
+    require 'spaceship'
+
+    locale = options[:locale]
+    UI.user_error!("用法:fastlane ios delete_locale locale:zh-Hant") if locale.nil?
+
+    # 走 Apple ID + 2FA(同 metadata lane 的登录路径)。
+    # Apple ID 关联多个 Team 时必须显式指定 portal team_id,否则 select_team 弹交互。
+    Spaceship::ConnectAPI.login(
+      ENV.fetch('APPLE_ID'),
+      nil,
+      portal_team_id: ENV.fetch('TEAM_ID'),  # Developer Portal Team ID,见 fastlane/.env
+    )
+
+    app = Spaceship::ConnectAPI::App.find(ENV.fetch('APP_IDENTIFIER'))
+    UI.user_error!("App #{ENV['APP_IDENTIFIER']} 在 App Store Connect 找不到") unless app
+
+    versions = Spaceship::ConnectAPI::AppStoreVersion.all(app_id: app.id)
+    UI.user_error!("App 没有 version") if versions.empty?
+    version = versions.max_by(&:created_date)
+
+    localizations = Spaceship::ConnectAPI::AppStoreVersionLocalization.all(
+      app_store_version_id: version.id,
+    )
+    existing = localizations.map(&:locale).join(', ')
+    loc = localizations.find { |l| l.locale == locale }
+
+    unless loc
+      UI.important("#{locale} 不在 version #{version.version_string} 的本地化列表里。当前:#{existing}")
+      next
+    end
+
+    Spaceship::ConnectAPI::AppStoreVersionLocalization.delete(
+      app_store_version_localization_id: loc.id,
+    )
+    UI.success("已删除 #{locale}(version #{version.version_string})。当前剩余:#{(existing.split(', ') - [locale]).join(', ')}")
+  end
+end

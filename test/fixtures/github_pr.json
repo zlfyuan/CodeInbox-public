@@ -1,0 +1,15 @@
+{
+  "number": 12,
+  "title": "Fix inbox merge",
+  "body": "Please review this change.",
+  "state": "open",
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "html_url": "https://github.com/acme/box/pull/12",
+  "user": { "login": "alice" },
+  "head": { "ref": "feat-inbox", "sha": "abc123" },
+  "base": { "ref": "main", "sha": "def456", "repo": { "full_name": "acme/box" } },
+  "created_at": "2026-09-01T10:00:00Z",
+  "updated_at": "2026-09-14T08:00:00Z"
+}

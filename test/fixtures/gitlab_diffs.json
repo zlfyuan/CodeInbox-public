@@ -1,0 +1,9 @@
+[
+  {
+    "old_path": "lib/domain/inbox.dart",
+    "new_path": "lib/domain/inbox.dart",
+    "new_file": false,
+    "deleted_file": false,
+    "diff": "@@ -1,3 +1,6 @@\n+List merge() {\n  return items;\n+}\n"
+  }
+]

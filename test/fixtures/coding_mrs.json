@@ -1,0 +1,31 @@
+{
+  "Response": {
+    "RequestId": "req-4",
+    "MergeRequestList": [
+      {
+        "Id": 9001,
+        "IId": 12,
+        "Title": "Fix inbox merge",
+        "Content": "Please review this change.",
+        "Status": "open",
+        "SrcBranch": "feat-inbox",
+        "DestBranch": "master",
+        "DepotId": 200,
+        "DepotName": "inbox",
+        "CreatedAt": "2026-09-14T08:00:00+08:00",
+        "UpdatedAt": "2026-09-14T09:00:00+08:00",
+        "Author": {
+          "Id": 7,
+          "GlobalKey": "alice",
+          "Name": "alice"
+        },
+        "Reviewers": [
+          {
+            "Id": 42,
+            "GlobalKey": "coder"
+          }
+        ]
+      }
+    ]
+  }
+}

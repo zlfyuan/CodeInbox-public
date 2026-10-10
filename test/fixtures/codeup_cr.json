@@ -1,0 +1,22 @@
+{
+  "allRequirementsPass": true,
+  "author": {
+    "name": "alice",
+    "userId": "u-alice",
+    "username": "alice"
+  },
+  "conflictCheckStatus": "NO_CONFLICT",
+  "createTime": "2026-09-14T08:00:00Z",
+  "description": "Please review this change.",
+  "detailUrl": "https://codeup.aliyun.com/acme/box/change/12",
+  "localId": 12,
+  "projectId": 2813489,
+  "sourceBranch": "feat-inbox",
+  "status": "UNDER_REVIEW",
+  "targetBranch": "master",
+  "targetProjectPathWithNamespace": "acme/box",
+  "title": "Fix inbox merge",
+  "updateTime": "2026-09-14T09:00:00Z",
+  "webUrl": "https://codeup.aliyun.com/acme/box/change/12",
+  "workInProgress": false
+}

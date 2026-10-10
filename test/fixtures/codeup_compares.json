@@ -1,0 +1,18 @@
+{
+  "commits": [
+    {
+      "id": "6da8c14b5a9102998148b7ea35f96507d5304f74",
+      "title": "Fix inbox merge"
+    }
+  ],
+  "diffs": [
+    {
+      "deletedFile": false,
+      "diff": "@@ -1,2 +1,2 @@\n keep\n-change\n+void recovered()\n",
+      "isBinary": false,
+      "newFile": false,
+      "newPath": "big/file.dart",
+      "oldPath": "big/file.dart"
+    }
+  ]
+}

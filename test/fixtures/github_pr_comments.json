@@ -1,0 +1,10 @@
+[
+  {
+    "id": 88,
+    "body": "Looks good overall.",
+    "path": "lib/domain/inbox.dart",
+    "line": 12,
+    "user": { "login": "bob" },
+    "created_at": "2026-09-14T09:00:00Z"
+  }
+]

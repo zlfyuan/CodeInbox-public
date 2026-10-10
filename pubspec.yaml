@@ -1,0 +1,30 @@
+name: codeinbox
+description: CodeInbox — unified PR/MR inbox for GitHub and Gitee
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  # flutter_gen-l10n 需要 intl 来生成 AppLocalizations。
+  intl: any
+  cupertino_icons: ^1.0.8
+  http: ^1.4.0
+  flutter_secure_storage: ^9.2.4
+  shared_preferences: ^2.5.3
+  url_launcher: ^6.3.1
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true

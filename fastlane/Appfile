@@ -1,0 +1,13 @@
+# fastlane Appfile — CodeInbox
+# 全部从 .env 读,真实值请填 fastlane/.env。
+# 不要把真实 Apple ID / Team ID / API Key 直接写进这个文件。
+
+app_identifier ENV.fetch("APP_IDENTIFIER", "com.zluof.codeinbox")
+# 不设默认值：真实 Apple ID 只放 fastlane/.env（已 gitignore）。
+apple_id       ENV.fetch("APPLE_ID")
+
+# App Store Connect Team ID(纯数字,9 位或 10 位)。
+itc_team_id    ENV["ITC_TEAM_ID"]
+
+# Developer Portal Team ID 只放 fastlane/.env，这里不写默认值。
+team_id        ENV.fetch("TEAM_ID")

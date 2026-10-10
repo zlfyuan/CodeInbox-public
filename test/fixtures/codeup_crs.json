@@ -1,0 +1,29 @@
+[
+  {
+    "author": {
+      "name": "alice",
+      "userId": "62c795xxxb468af8",
+      "username": "alice"
+    },
+    "createdAt": "2026-09-14T08:00:00Z",
+    "description": "Please review this change.",
+    "detailUrl": "https://codeup.aliyun.com/acme/box/change/12",
+    "hasConflict": false,
+    "localId": 12,
+    "projectId": 2813489,
+    "reviewers": [
+      {
+        "hasReviewed": false,
+        "userId": "62c795xxxb468af8",
+        "username": "coder"
+      }
+    ],
+    "sourceBranch": "feat-inbox",
+    "state": "UNDER_REVIEW",
+    "targetBranch": "master",
+    "title": "Fix inbox merge",
+    "updatedAt": "2026-09-14T08:00:00Z",
+    "webUrl": "https://codeup.aliyun.com/acme/box/change/12",
+    "workInProgress": false
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "filename": "lib/store.dart",
+    "status": "modified",
+    "additions": 2,
+    "deletions": 0,
+    "diff": "@@ -1,2 +1,4 @@\n class AppStore {}\n+void refresh() {}\n"
+  }
+]

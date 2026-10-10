@@ -1,0 +1,13 @@
+{
+  "changedTreeItems": [
+    {
+      "addLines": 4,
+      "delLines": 1,
+      "deletedFile": "false",
+      "newFile": false,
+      "newPath": "lib/domain/inbox.dart",
+      "oldPath": "lib/domain/inbox.dart"
+    }
+  ],
+  "count": 1
+}

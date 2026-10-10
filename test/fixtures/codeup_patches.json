@@ -1,0 +1,12 @@
+[
+  {
+    "patchSetBizId": "from-target",
+    "relatedMergeItemType": "MERGE_TARGET",
+    "versionNo": 1
+  },
+  {
+    "patchSetBizId": "to-source",
+    "relatedMergeItemType": "MERGE_SOURCE",
+    "versionNo": 2
+  }
+]

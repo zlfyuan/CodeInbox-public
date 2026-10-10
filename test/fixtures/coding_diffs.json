@@ -1,0 +1,14 @@
+{
+  "Response": {
+    "RequestId": "req-6",
+    "Files": [
+      {
+        "Path": "lib/domain/inbox.dart",
+        "Diff": "@@\n+ok\n",
+        "Additions": 4,
+        "Deletions": 1,
+        "ChangeType": "modify"
+      }
+    ]
+  }
+}

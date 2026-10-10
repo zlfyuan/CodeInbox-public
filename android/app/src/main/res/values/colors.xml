@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CodeInbox brand colors — sync with lib/theme.dart seed #0F766E and logo Ink #10141A -->
+<resources>
+    <!-- Adaptive launcher icon background (matches logo Ink) -->
+    <color name="ic_launcher_background">#10141A</color>
+</resources>

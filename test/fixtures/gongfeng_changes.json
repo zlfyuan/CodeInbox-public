@@ -1,0 +1,16 @@
+{
+  "id": 9001,
+  "iid": 12,
+  "title": "Fix inbox merge",
+  "files": [
+    {
+      "old_path": "lib/domain/inbox.dart",
+      "new_path": "lib/domain/inbox.dart",
+      "new_file": false,
+      "deleted_file": false,
+      "diff": "@@\n+ok\n",
+      "additions": 4,
+      "deletions": 1
+    }
+  ]
+}

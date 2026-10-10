@@ -1,0 +1,77 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# project-init generated local agent files
+# .claude/ 进度与指令入库；CodeGraph 索引不入库
+.codegraph/
+.claude/
+.codex/
+
+# 鸿蒙构建产物 / 签名材料（ohos/.gitignore 已覆盖一部分，这里兜底）
+ohos/.hvigor/
+ohos/build/
+ohos/oh-package-lock.json5
+ohos/local.properties
+ohos/entry/build/
+ohos/node_modules/
+ohos/oh_modules/
+signing/
+.ohos-flutter/
+
+ohos/.env/
+
+# 签名与商店账号。fastlane/.env 由子目录 gitignore 再挡一层。
+*.p12
+*.p8
+*.p7b
+*.cer
+*.csr
+fastlane/.env
+
+docs/
+
+AGENTS.md
+CLAUDE.md

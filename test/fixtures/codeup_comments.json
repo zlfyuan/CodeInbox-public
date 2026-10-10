@@ -1,0 +1,16 @@
+[
+  {
+    "author": {
+      "name": "bob",
+      "username": "bob"
+    },
+    "comment_biz_id": "c1",
+    "comment_time": "2026-09-14T10:00:00Z",
+    "comment_type": "INLINE_COMMENT",
+    "content": "Please split this function.",
+    "filePath": "lib/domain/inbox.dart",
+    "is_deleted": false,
+    "line_number": 12,
+    "state": "OPENED"
+  }
+]

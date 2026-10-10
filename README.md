@@ -1,5 +1,7 @@
 # CodeInbox
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
 Unified mobile inbox for GitHub, Gitee, GitLab, Codeup, Gongfeng, and CODING review requests. Flutter, Android + iOS + HarmonyOS NEXT.
 
 Tokens stay on device (Keychain / Keystore / HUKS). There is no backend.

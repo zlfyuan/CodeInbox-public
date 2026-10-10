@@ -1,5 +1,7 @@
 # CodeInbox
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
 统一管理 GitHub、Gitee、GitLab、Codeup、工蜂（Gongfeng）和 CODING 评审请求的移动端收件箱。基于 Flutter 开发，支持 Android、iOS 和 HarmonyOS NEXT。
 
 访问令牌仅保存在设备本地（iOS Keychain / Android Keystore / 鸿蒙 HUKS），无后端服务。
